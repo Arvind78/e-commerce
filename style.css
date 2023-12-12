@@ -326,7 +326,8 @@ header {
 
     .toggle i {
         font-size: 28px;
-        color: aqua;
+        color: rgb(192, 192, 14);
+
         padding: 15px 0px;
     }
 

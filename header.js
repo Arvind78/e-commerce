@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const cartIcon = document.createElement('i');
   cartIcon.classList.add('fa-solid', 'fa-cart-shopping');
   const spanCart = document.createElement('span');
-  spanCart.textContent = `${(JSON.parse(localStorage.getItem("product")).length)}`;
+  spanCart.textContent = `${(JSON.parse(localStorage.getItem("product")).length) || 0}`;
   cartLink.appendChild(cartIcon);
   cartLink.appendChild(spanCart);
   cartDiv.appendChild(cartLink);

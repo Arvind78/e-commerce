@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Append other child elements as needed...
   header.appendChild(firstHeaderDiv);
   header.appendChild(secondHeaderDiv);
-  document.body.appendChild(header, document.body.firstChild);
+  document.body.insertBefore(header, document.body.firstChild);
 })
 //section 2 remaining elements
 document.addEventListener('DOMContentLoaded', function() {

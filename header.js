@@ -1,5 +1,6 @@
 // Create header element
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
+  function header(){
   const header = document.createElement('header');
   // Create first-header div
   const firstHeaderDiv = document.createElement('div');
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
   header.appendChild(firstHeaderDiv);
   header.appendChild(secondHeaderDiv);
   document.body.insertBefore(header, document.body.firstChild);
-})
+}
 //section 2 remaining elements
 document.addEventListener('DOMContentLoaded', function() {
   const secondHeaderDiv = document.getElementById('section2');
@@ -132,3 +133,5 @@ document.addEventListener('DOMContentLoaded', function() {
   secondHeaderDiv.appendChild(kidsLink)
   secondHeaderDiv.appendChild(contactLink)
 })
+
+header()
